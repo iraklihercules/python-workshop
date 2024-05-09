@@ -21,6 +21,7 @@
 # rule and the good suffix rule to determine the optimal shift values during the matching process.
 # It has a time complexity of O(n + m), where n is the length of the text and m is the length of the pattern.
 
+
 def bad_character_table(pattern):
     table = {}
     for i in range(len(pattern) - 1):

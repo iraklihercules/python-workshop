@@ -10,6 +10,7 @@
 # Additionally, it has an advantage of sorting the array in-place, meaning it requires only a constant
 # amount of additional memory space.
 
+
 def insertion_sort(arr):
     # Traverse through all array elements starting from the second element
     for i in range(1, len(arr)):

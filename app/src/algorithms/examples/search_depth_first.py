@@ -9,6 +9,7 @@
 # It can be implemented using either recursion or iteration (using a stack).
 # This example uses recursion to traverse the graph starting from a specified node.
 
+
 def dfs(graph, start, visited=None):
     if visited is None:
         visited = set()
@@ -24,13 +25,13 @@ def dfs(graph, start, visited=None):
 if __name__ == "__main__":
     # Example graph represented as an adjacency list
     graph = {
-        'A': ['B', 'C'],
-        'B': ['A', 'D', 'E'],
-        'C': ['A', 'F'],
-        'D': ['B'],
-        'E': ['B', 'F'],
-        'F': ['C', 'E']
+        "A": ["B", "C"],
+        "B": ["A", "D", "E"],
+        "C": ["A", "F"],
+        "D": ["B"],
+        "E": ["B", "F"],
+        "F": ["C", "E"],
     }
 
     print("Depth-First Search (DFS):")
-    dfs(graph, 'A')  # Output: A B D E F C
+    dfs(graph, "A")  # Output: A B D E F C

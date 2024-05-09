@@ -9,6 +9,7 @@
 # display_forward(): Prints the elements of the linked list in forward order.
 # display_backward(): Prints the elements of the linked list in backward order.
 
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -76,7 +77,7 @@ if __name__ == "__main__":
     linked_list.append(2)
     linked_list.append(3)
     linked_list.prepend(0)
-    linked_list.display_forward()   # Output: 0 <-> 1 <-> 2 <-> 3 <-> None
+    linked_list.display_forward()  # Output: 0 <-> 1 <-> 2 <-> 3 <-> None
     linked_list.delete_node(2)
-    linked_list.display_forward()   # Output: 0 <-> 1 <-> 3 <-> None
+    linked_list.display_forward()  # Output: 0 <-> 1 <-> 3 <-> None
     linked_list.display_backward()  # Output: 3 <-> 1 <-> 0 <-> None

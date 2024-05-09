@@ -20,10 +20,12 @@ obj = MyClass()
 # Access the protected variable using the object name and print its value
 # The protected variable can be accessed outside the class but
 # it is intended to be used within the class or its subclasses
-print(obj._protected_var)   # output: 10
+print(obj._protected_var)  # output: 10
 
 
 # Try to access the private variable using the object name and print its value
 # The private variable cannot be accessed outside the class, even by its subclasses
 # This will raise an AttributeError because the variable is not accessible outside the class
-print(obj.__private_var)    # AttributeError: 'MyClass' object has no attribute '__private_var'
+print(
+    obj.__private_var
+)  # AttributeError: 'MyClass' object has no attribute '__private_var'

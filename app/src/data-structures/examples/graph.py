@@ -8,6 +8,7 @@
 # The dfs and bfs methods traverse the graph starting from a given node using Depth First Search and
 # Breadth First Search, respectively.
 
+
 class Graph:
     def __init__(self):
         self.graph = {}

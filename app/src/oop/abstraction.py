@@ -27,7 +27,7 @@ class Circle(Shape):
 
     # Implement the area method for Circles
     def area(self):
-        return 3.14 * self.radius ** 2
+        return 3.14 * self.radius**2
 
 
 # Create a list of shapes that includes both Rectangles and Circles

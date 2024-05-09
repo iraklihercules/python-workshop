@@ -57,4 +57,3 @@ if __name__ == "__main__":
 
     cloned_car = prototype.clone("car", year=2023)
     print(cloned_car)  # Output: 2023 Toyota Corolla
-

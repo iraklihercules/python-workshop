@@ -5,6 +5,7 @@
 # size(): Returns the number of items in the stack.
 # is_empty(): Returns True if the stack is empty, False otherwise.
 
+
 class Stack:
     def __init__(self):
         self.stack = []

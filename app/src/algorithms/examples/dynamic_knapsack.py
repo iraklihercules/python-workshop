@@ -16,6 +16,7 @@
 # dynamic programming is O(n * capacity), where n is the number of items and capacity is the maximum weight
 # capacity of the knapsack.
 
+
 def knapsack(weights, values, capacity):
     n = len(weights)
 
@@ -27,7 +28,9 @@ def knapsack(weights, values, capacity):
         for j in range(1, capacity + 1):
             # If the current item can be included
             if weights[i - 1] <= j:
-                dp[i][j] = max(dp[i - 1][j], values[i - 1] + dp[i - 1][j - weights[i - 1]])
+                dp[i][j] = max(
+                    dp[i - 1][j], values[i - 1] + dp[i - 1][j - weights[i - 1]]
+                )
             # If the current item cannot be included
             else:
                 dp[i][j] = dp[i - 1][j]

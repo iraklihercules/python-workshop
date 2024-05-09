@@ -26,7 +26,7 @@ class Circle(Shape):
         self.radius = radius  # Initialize radius instance variable
 
     def area(self):
-        return 3.14 * self.radius ** 2  # Return area of circle using pi * r^2
+        return 3.14 * self.radius**2  # Return area of circle using pi * r^2
 
 
 # The shapes list is created with one Rectangle object and one Circle object. The for

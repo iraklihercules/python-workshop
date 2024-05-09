@@ -9,6 +9,7 @@
 # Traversal methods: inorder_traversal, preorder_traversal, and postorder_traversal perform inorder, preorder,
 # and postorder traversals of the binary tree, respectively.
 
+
 class Node:
     def __init__(self, data):
         self.data = data

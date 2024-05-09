@@ -17,8 +17,9 @@
 # is the number of edges.
 # It can handle graphs with negative edge weights and detect negative cycles.
 
+
 def bellman_ford(graph, start):
-    distances = {node: float('inf') for node in graph}
+    distances = {node: float("inf") for node in graph}
     distances[start] = 0
 
     for _ in range(len(graph) - 1):
@@ -39,14 +40,9 @@ def bellman_ford(graph, start):
 # Example usage:
 if __name__ == "__main__":
     # Example graph represented as an adjacency list with weighted edges
-    graph = {
-        'A': {'B': 3, 'C': 4},
-        'B': {'C': -2},
-        'C': {'D': 1},
-        'D': {'B': -5}
-    }
+    graph = {"A": {"B": 3, "C": 4}, "B": {"C": -2}, "C": {"D": 1}, "D": {"B": -5}}
 
-    start_vertex = 'A'
+    start_vertex = "A"
     shortest_distances = bellman_ford(graph, start_vertex)
 
     print("Shortest distances from vertex", start_vertex, "to all other vertices:")

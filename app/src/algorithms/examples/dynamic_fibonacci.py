@@ -15,6 +15,7 @@
 # and storing the solutions to subproblems to avoid redundant calculations. In the case of the Fibonacci series,
 # dynamic programming helps to optimize the time complexity from exponential to linear.
 
+
 def fibonacci(n):
     # Initialize an array to store Fibonacci numbers
     fib = [0, 1]
@@ -29,4 +30,6 @@ def fibonacci(n):
 # Example usage:
 if __name__ == "__main__":
     n = 10
-    print(f"The {n}-th Fibonacci number is:", fibonacci(n))  # Output: The 10-th Fibonacci number is: 55
+    print(
+        f"The {n}-th Fibonacci number is:", fibonacci(n)
+    )  # Output: The 10-th Fibonacci number is: 55

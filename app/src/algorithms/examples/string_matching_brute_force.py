@@ -11,6 +11,7 @@
 # text, one by one, to find occurrences of the pattern. It has a time complexity of O((n - m + 1) * m),
 # where n is the length of the text and m is the length of the pattern.
 
+
 def brute_force_string_matching(text, pattern):
     n = len(text)
     m = len(pattern)

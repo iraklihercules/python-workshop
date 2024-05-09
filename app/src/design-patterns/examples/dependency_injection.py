@@ -19,6 +19,7 @@
 # This example demonstrates how the dependency injection pattern can be implemented in Python using a decorator.
 # It allows for decoupling of dependencies and promotes flexibility and testability in the codebase.
 
+
 class DependencyInjector:
     _dependencies = {}
 
@@ -29,17 +30,20 @@ class DependencyInjector:
     @classmethod
     def inject(cls, dependent_cls):
         def inject_dependencies(*args, **kwargs):
-            for attr_name, dependency_name in getattr(dependent_cls, '__dependencies__', {}).items():
+            for attr_name, dependency_name in getattr(
+                dependent_cls, "__dependencies__", {}
+            ).items():
                 if dependency_name in cls._dependencies:
                     setattr(args[0], attr_name, cls._dependencies[dependency_name])
             return dependent_cls(*args, **kwargs)
+
         return inject_dependencies
 
 
 # Example usage
 @DependencyInjector.inject
 class NotificationService:
-    __dependencies__ = {'email_service': 'EmailService'}
+    __dependencies__ = {"email_service": "EmailService"}
 
     def send_notification(self, recipient, message):
         self.email_service.send_email(recipient, message)
@@ -51,7 +55,7 @@ class EmailService:
 
 
 # Register dependencies
-DependencyInjector.register('EmailService', EmailService())
+DependencyInjector.register("EmailService", EmailService())
 
 
 # Client code

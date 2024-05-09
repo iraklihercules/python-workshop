@@ -4,6 +4,7 @@
 # _heapify_down(index): Restores the min-heap property by moving the element at the given index down the heap if necessary.
 # get_min(): Returns the minimum value in the min-heap without removing it.
 
+
 class MinHeap:
     def __init__(self):
         self.heap = []
@@ -15,7 +16,10 @@ class MinHeap:
     def _heapify_up(self, index):
         parent_index = (index - 1) // 2
         if index > 0 and self.heap[index] < self.heap[parent_index]:
-            self.heap[index], self.heap[parent_index] = self.heap[parent_index], self.heap[index]
+            self.heap[index], self.heap[parent_index] = (
+                self.heap[parent_index],
+                self.heap[index],
+            )
             self._heapify_up(parent_index)
 
     def extract_min(self):
@@ -33,13 +37,22 @@ class MinHeap:
         right_child_index = 2 * index + 2
         smallest = index
 
-        if left_child_index < len(self.heap) and self.heap[left_child_index] < self.heap[smallest]:
+        if (
+            left_child_index < len(self.heap)
+            and self.heap[left_child_index] < self.heap[smallest]
+        ):
             smallest = left_child_index
-        if right_child_index < len(self.heap) and self.heap[right_child_index] < self.heap[smallest]:
+        if (
+            right_child_index < len(self.heap)
+            and self.heap[right_child_index] < self.heap[smallest]
+        ):
             smallest = right_child_index
 
         if smallest != index:
-            self.heap[index], self.heap[smallest] = self.heap[smallest], self.heap[index]
+            self.heap[index], self.heap[smallest] = (
+                self.heap[smallest],
+                self.heap[index],
+            )
             self._heapify_down(smallest)
 
     def get_min(self):

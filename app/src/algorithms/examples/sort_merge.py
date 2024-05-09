@@ -7,6 +7,7 @@
 # It is efficient for sorting large datasets and is stable, meaning it preserves the relative order of equal
 # elements in the sorted output.
 
+
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2  # Find the middle of the array
@@ -45,4 +46,3 @@ if __name__ == "__main__":
     merge_sort(arr)
 
     print("Sorted array:", arr)  # Output: [11, 12, 22, 25, 34, 64, 90]
-

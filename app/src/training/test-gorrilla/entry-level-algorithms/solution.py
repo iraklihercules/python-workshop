@@ -1,4 +1,3 @@
-
 def count_integers(n, val, arr):
     smaller = sum(1 for num in arr if num < val)
     equal = sum(1 for num in arr if num == val)
@@ -15,4 +14,4 @@ data = [
 for row in data:
     n, val, arr = row
     result = count_integers(n, val, arr)
-    print(' '.join(map(str, result)))
+    print(" ".join(map(str, result)))

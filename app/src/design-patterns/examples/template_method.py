@@ -16,6 +16,7 @@
 # operation and hook methods to customize the behavior of the algorithm without changing its overall structure.
 # This promotes code reuse and flexibility in defining algorithms with similar structures but varying implementations.
 
+
 # Abstract class with template method
 class AbstractClass:
     def template_method(self):

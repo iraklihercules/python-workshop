@@ -9,6 +9,7 @@
 # where n is the number of elements in the array. It sequentially checks each element of the array
 # until it finds the target element or reaches the end of the array.
 
+
 def linear_search(arr, target):
     for i in range(len(arr)):
         if arr[i] == target:

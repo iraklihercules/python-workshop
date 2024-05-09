@@ -17,6 +17,7 @@
 # object through the iterator interface, which provides a uniform way to access the elements regardless of the
 # specific implementation of the aggregate.
 
+
 # Iterator interface
 class Iterator:
     def __init__(self, collection):

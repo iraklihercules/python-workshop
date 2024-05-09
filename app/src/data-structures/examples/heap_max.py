@@ -4,6 +4,7 @@
 # _heapify_down(index): Restores the max-heap property by moving the element at the given index down the heap if necessary.
 # get_max(): Returns the maximum value in the max-heap without removing it.
 
+
 class MaxHeap:
     def __init__(self):
         self.heap = []
@@ -15,7 +16,10 @@ class MaxHeap:
     def _heapify_up(self, index):
         parent_index = (index - 1) // 2
         if index > 0 and self.heap[index] > self.heap[parent_index]:
-            self.heap[index], self.heap[parent_index] = self.heap[parent_index], self.heap[index]
+            self.heap[index], self.heap[parent_index] = (
+                self.heap[parent_index],
+                self.heap[index],
+            )
             self._heapify_up(parent_index)
 
     def extract_max(self):
@@ -33,9 +37,15 @@ class MaxHeap:
         right_child_index = 2 * index + 2
         largest = index
 
-        if left_child_index < len(self.heap) and self.heap[left_child_index] > self.heap[largest]:
+        if (
+            left_child_index < len(self.heap)
+            and self.heap[left_child_index] > self.heap[largest]
+        ):
             largest = left_child_index
-        if right_child_index < len(self.heap) and self.heap[right_child_index] > self.heap[largest]:
+        if (
+            right_child_index < len(self.heap)
+            and self.heap[right_child_index] > self.heap[largest]
+        ):
             largest = right_child_index
 
         if largest != index:

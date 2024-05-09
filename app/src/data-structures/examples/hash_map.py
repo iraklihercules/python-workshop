@@ -7,6 +7,7 @@
 # The remove method removes a key-value pair from the hash map based on the given key.
 # Example usage demonstrates how to use the HashMap class to insert, retrieve, update, and remove key-value pairs.
 
+
 class HashMap:
     def __init__(self, size=10):
         self.size = size
@@ -49,13 +50,21 @@ if __name__ == "__main__":
     hashmap.put("orange", 30)
 
     # Retrieving values
-    print("Value for key 'apple':", hashmap.get("apple"))  # Output: Value for key 'apple': 10
-    print("Value for key 'banana':", hashmap.get("banana"))  # Output: Value for key 'banana': 20
-    print("Value for key 'orange':", hashmap.get("orange"))  # Output: Value for key 'orange': 30
+    print(
+        "Value for key 'apple':", hashmap.get("apple")
+    )  # Output: Value for key 'apple': 10
+    print(
+        "Value for key 'banana':", hashmap.get("banana")
+    )  # Output: Value for key 'banana': 20
+    print(
+        "Value for key 'orange':", hashmap.get("orange")
+    )  # Output: Value for key 'orange': 30
 
     # Updating value
     hashmap.put("apple", 15)
-    print("Updated value for key 'apple':", hashmap.get("apple"))  # Output: Updated value for key 'apple': 15
+    print(
+        "Updated value for key 'apple':", hashmap.get("apple")
+    )  # Output: Updated value for key 'apple': 15
 
     # Removing key-value pair
     hashmap.remove("banana")

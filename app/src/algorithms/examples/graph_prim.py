@@ -47,13 +47,13 @@ def prim(graph, start):
 if __name__ == "__main__":
     # Example graph represented as an adjacency list with weighted edges
     graph = {
-        'A': {'B': 2, 'C': 3},
-        'B': {'A': 2, 'C': 1, 'D': 1},
-        'C': {'A': 3, 'B': 1, 'D': 2},
-        'D': {'B': 1, 'C': 2}
+        "A": {"B": 2, "C": 3},
+        "B": {"A": 2, "C": 1, "D": 1},
+        "C": {"A": 3, "B": 1, "D": 2},
+        "D": {"B": 1, "C": 2},
     }
 
-    start_vertex = 'A'
+    start_vertex = "A"
     minimum_spanning_tree = prim(graph, start_vertex)
 
     print("Minimum Spanning Tree (MST):")

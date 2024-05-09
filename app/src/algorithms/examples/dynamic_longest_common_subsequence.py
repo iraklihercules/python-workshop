@@ -16,6 +16,7 @@
 # subproblems and storing the solutions to avoid redundant calculations. The time complexity of the
 # LCS algorithm using dynamic programming is O(m * n), where m and n are the lengths of the input strings.
 
+
 def longest_common_subsequence(text1, text2):
     m, n = len(text1), len(text2)
 

@@ -13,6 +13,7 @@
 # effectively reducing the search space with each iteration. However, it requires the array to be sorted
 # beforehand.
 
+
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
 
@@ -22,9 +23,13 @@ def binary_search(arr, target):
         if arr[mid] == target:
             return mid  # Return the index of the target element if found
         elif arr[mid] < target:
-            left = mid + 1  # Update the left boundary if the target is greater than the middle element
+            left = (
+                mid + 1
+            )  # Update the left boundary if the target is greater than the middle element
         else:
-            right = mid - 1  # Update the right boundary if the target is smaller than the middle element
+            right = (
+                mid - 1
+            )  # Update the right boundary if the target is smaller than the middle element
 
     return -1  # Return -1 if the target element is not found
 

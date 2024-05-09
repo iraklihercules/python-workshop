@@ -1,4 +1,3 @@
-
 def special_tree(values, k):
     # DO NOT MODIFY THE CODE BELOW
     my_tree = MySpecialTree(values)

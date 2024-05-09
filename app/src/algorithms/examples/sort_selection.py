@@ -9,6 +9,7 @@
 # in the worst case. However, it performs fewer swaps compared to bubble sort, making it more efficient
 # for arrays with large data but a small number of swaps.
 
+
 def selection_sort(arr):
     n = len(arr)
 

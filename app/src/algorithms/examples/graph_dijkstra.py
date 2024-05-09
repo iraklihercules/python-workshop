@@ -21,7 +21,9 @@ import heapq
 
 
 def dijkstra(graph, start):
-    distances = {node: float('inf') for node in graph}  # Initialize distances to infinity
+    distances = {
+        node: float("inf") for node in graph
+    }  # Initialize distances to infinity
     distances[start] = 0  # Distance from start vertex to itself is 0
     heap = [(0, start)]  # Priority queue to store (distance, vertex) pairs
 
@@ -45,13 +47,13 @@ def dijkstra(graph, start):
 if __name__ == "__main__":
     # Example graph represented as an adjacency list with weighted edges
     graph = {
-        'A': {'B': 3, 'C': 4},
-        'B': {'A': 3, 'C': 1, 'D': 7},
-        'C': {'A': 4, 'B': 1, 'D': 2},
-        'D': {'B': 7, 'C': 2}
+        "A": {"B": 3, "C": 4},
+        "B": {"A": 3, "C": 1, "D": 7},
+        "C": {"A": 4, "B": 1, "D": 2},
+        "D": {"B": 7, "C": 2},
     }
 
-    start_vertex = 'A'
+    start_vertex = "A"
     shortest_distances = dijkstra(graph, start_vertex)
 
     print("Shortest distances from vertex", start_vertex, "to all other vertices:")

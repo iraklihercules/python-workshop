@@ -4,6 +4,7 @@
 # and creates a new instance using the super().__new__(cls) call.
 # Subsequent calls to create an instance of the Singleton class return the same instance stored in the _instance variable.
 
+
 class Singleton:
     _instance = None
 
@@ -20,4 +21,6 @@ if __name__ == "__main__":
     singleton2 = Singleton()
 
     # Checking if both instances are the same
-    print("Is singleton1 the same instance as singleton2?", singleton1 is singleton2)  # Output: True
+    print(
+        "Is singleton1 the same instance as singleton2?", singleton1 is singleton2
+    )  # Output: True

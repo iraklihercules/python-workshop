@@ -11,6 +11,7 @@
 # construction process to create different representations. It promotes code readability and maintainability by
 # providing a clear and fluent interface for building objects.
 
+
 class Pizza:
     def __init__(self):
         self.size = None
@@ -44,5 +45,11 @@ class PizzaBuilder:
 # Client code
 if __name__ == "__main__":
     pizza_builder = PizzaBuilder()
-    pizza = pizza_builder.set_size("Large").set_crust("Thin").add_topping("Pepperoni").add_topping("Mushrooms").build()
+    pizza = (
+        pizza_builder.set_size("Large")
+        .set_crust("Thin")
+        .add_topping("Pepperoni")
+        .add_topping("Mushrooms")
+        .build()
+    )
     print(pizza)  # Output: Size: Large, Crust: Thin, Toppings: Pepperoni, Mushrooms

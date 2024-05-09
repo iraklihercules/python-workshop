@@ -10,6 +10,7 @@
 # inorder_traversal(node): Performs an inorder traversal of the binary tree, which visits the left subtree,
 # then the root, and finally the right subtree.
 
+
 class Node:
     def __init__(self, data):
         self.data = data

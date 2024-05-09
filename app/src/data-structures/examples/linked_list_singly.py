@@ -6,6 +6,7 @@
 # delete_node(key): Deletes the first occurrence of a node with the given data.
 # display(): Prints the elements of the linked list.
 
+
 class Node:
     def __init__(self, data):
         self.data = data

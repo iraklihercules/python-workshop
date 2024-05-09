@@ -14,6 +14,7 @@
 # state changes. State-specific behavior is encapsulated in separate state classes, making it easier to manage
 # and extend the system with new states and transitions.
 
+
 # State interface
 class State:
     def handle(self):

@@ -17,6 +17,7 @@
 # methods. This way, the AudioPlayer can work with both MP3 and advanced audio formats without directly depending on
 # their implementations.
 
+
 class MediaPlayer:
     def play(self, audio_type, filename):
         pass

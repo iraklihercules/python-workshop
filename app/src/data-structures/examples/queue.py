@@ -5,6 +5,7 @@
 # size(): Returns the number of items in the queue.
 # is_empty(): Returns True if the queue is empty, False otherwise.
 
+
 class Queue:
     def __init__(self):
         self.queue = []
@@ -44,4 +45,3 @@ if __name__ == "__main__":
     print("Dequeue:", q.dequeue())  # Output: 1
     print("Queue size after dequeue:", q.size())  # Output: 2
     print("Peek:", q.peek())  # Output: 2
-

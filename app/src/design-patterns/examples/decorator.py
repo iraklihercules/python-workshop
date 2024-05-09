@@ -15,6 +15,7 @@
 # The Decorator Pattern allows you to add new functionalities to objects dynamically without subclassing.
 # It promotes code reuse, flexibility, and maintainability by allowing behaviors to be added and removed at runtime.
 
+
 # Component interface
 class Coffee:
     def cost(self):
@@ -58,10 +59,17 @@ if __name__ == "__main__":
     print("Cost of simple coffee:", coffee.cost())  # Output: Cost of simple coffee: 5
 
     coffee_with_milk = Milk(coffee)
-    print("Cost of coffee with milk:", coffee_with_milk.cost())  # Output: Cost of coffee with milk: 7
+    print(
+        "Cost of coffee with milk:", coffee_with_milk.cost()
+    )  # Output: Cost of coffee with milk: 7
 
     coffee_with_milk_and_sugar = Sugar(coffee_with_milk)
-    print("Cost of coffee with milk and sugar:", coffee_with_milk_and_sugar.cost())  # Output: Cost of coffee with milk and sugar: 8
+    print(
+        "Cost of coffee with milk and sugar:", coffee_with_milk_and_sugar.cost()
+    )  # Output: Cost of coffee with milk and sugar: 8
 
     coffee_with_milk_sugar_and_vanilla = Vanilla(coffee_with_milk_and_sugar)
-    print("Cost of coffee with milk, sugar, and vanilla:", coffee_with_milk_sugar_and_vanilla.cost())  # Output: Cost of coffee with milk, sugar, and vanilla: 11
+    print(
+        "Cost of coffee with milk, sugar, and vanilla:",
+        coffee_with_milk_sugar_and_vanilla.cost(),
+    )  # Output: Cost of coffee with milk, sugar, and vanilla: 11

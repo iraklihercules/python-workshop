@@ -18,6 +18,7 @@
 # allowing for parameterization of the requester with different commands. This promotes flexibility and
 # extensibility in the system, as new commands can be added without modifying existing code.
 
+
 # Command interface
 class Command:
     def execute(self):

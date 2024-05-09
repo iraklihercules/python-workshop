@@ -20,6 +20,7 @@
 # comparisons during the search process. It has a time complexity of O(n + m), where n is the length
 # of the text and m is the length of the pattern.
 
+
 def compute_prefix_function(pattern):
     m = len(pattern)
     pi = [0] * m

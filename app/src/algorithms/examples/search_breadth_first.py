@@ -30,13 +30,13 @@ def bfs(graph, start):
 if __name__ == "__main__":
     # Example graph represented as an adjacency list
     graph = {
-        'A': ['B', 'C'],
-        'B': ['A', 'D', 'E'],
-        'C': ['A', 'F'],
-        'D': ['B'],
-        'E': ['B', 'F'],
-        'F': ['C', 'E']
+        "A": ["B", "C"],
+        "B": ["A", "D", "E"],
+        "C": ["A", "F"],
+        "D": ["B"],
+        "E": ["B", "F"],
+        "F": ["C", "E"],
     }
 
     print("Breadth-First Search (BFS):")
-    bfs(graph, 'A')  # Output: A B C D E F
+    bfs(graph, "A")  # Output: A B C D E F

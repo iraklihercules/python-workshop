@@ -5,9 +5,7 @@ fib = [0, 1]
 
 def fibonacci(x: int):
     for i in range(len(fib), x + 1):
-        fib.append(
-            fib[i-2] + fib[i-1]
-        )
+        fib.append(fib[i - 2] + fib[i - 1])
 
     return fib[x]
 

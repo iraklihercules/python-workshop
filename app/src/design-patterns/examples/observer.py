@@ -17,6 +17,7 @@
 # changes using the notify method. ConcreteObserver instances are attached to the ConcreteSubject and are
 # updated when notified of changes in the subject's state.
 
+
 # Subject interface
 class Subject:
     def __init__(self):

@@ -74,10 +74,10 @@ def kruskal(graph):
 if __name__ == "__main__":
     # Example graph represented as an adjacency list with weighted edges
     graph = {
-        'A': {'B': 2, 'C': 3},
-        'B': {'A': 2, 'C': 1, 'D': 1},
-        'C': {'A': 3, 'B': 1, 'D': 2},
-        'D': {'B': 1, 'C': 2}
+        "A": {"B": 2, "C": 3},
+        "B": {"A": 2, "C": 1, "D": 1},
+        "C": {"A": 3, "B": 1, "D": 2},
+        "D": {"B": 1, "C": 2},
     }
 
     minimum_spanning_tree = kruskal(graph)

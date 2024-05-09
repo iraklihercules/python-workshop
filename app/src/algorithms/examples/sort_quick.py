@@ -11,6 +11,7 @@
 # It is efficient for sorting large datasets and has good average-case performance. However,
 # its worst-case time complexity is O(n^2) when the pivot selection is poor, making it less desirable for certain datasets.
 
+
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
