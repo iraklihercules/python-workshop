@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+      args:
+        NON_PRIVILEGED_USER_NAME: workshop
+    container_name: python-workshop
+    volumes:
+      - ./app/src:/app
+    networks:
+      - python-workshop-network
+
+networks:
+  python-workshop-network:
+    driver: bridge
